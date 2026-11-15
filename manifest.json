@@ -1,7 +1,7 @@
 {
   "name": "IndoFetch",
   "description": "Pilihan sumber film, serial, dan anime dari IndoStream dan CloudX-V2.",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "scrapers": [
     {
       "id": "layarkaca",
@@ -35,6 +35,39 @@
       "enabled": true,
       "contentLanguage": ["id"],
       "formats": ["mp4"]
+    },
+    {
+      "id": "oppadrama",
+      "name": "Oppadrama",
+      "description": "Sumber serial drama Korea",
+      "version": "1.0.0",
+      "filename": "providers/oppadrama.js",
+      "supportedTypes": ["series"],
+      "enabled": true,
+      "contentLanguage": ["id"],
+      "formats": ["m3u8"]
+    },
+    {
+      "id": "pencurimovie",
+      "name": "Pencurimovie",
+      "description": "Sumber film Pencurimovie",
+      "version": "1.0.0",
+      "filename": "providers/pencurimovie.js",
+      "supportedTypes": ["movie"],
+      "enabled": true,
+      "contentLanguage": ["id"],
+      "formats": ["m3u8"]
+    },
+    {
+      "id": "otakudesu",
+      "name": "Otakudesu",
+      "description": "Sumber serial anime Otakudesu",
+      "version": "1.0.0",
+      "filename": "providers/otakudesu.js",
+      "supportedTypes": ["series", "anime"],
+      "enabled": true,
+      "contentLanguage": ["id"],
+      "formats": ["m3u8", "mp4"]
     }
   ],
   "manifestVersion": 1,
