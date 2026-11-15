@@ -4,7 +4,7 @@ Repositori provider untuk Nuvio Desktop dan Nuvio TV Full.
 
 Di **Settings → Plugins → Add repository**, pilih URL sesuai aplikasi yang dipakai.
 
-- **Nuvio Desktop dan Nuvio TV Full di Android TV** bisa memakai [`manifest.json`](https://raw.githubusercontent.com/destradess/indofetch/refs/heads/main/manifest.json) dengan **LK21**, **Dutamovie**, dan **Pencurimovie** untuk film, **Dubbindo** untuk film dubbing Indonesia, **Oppadrama** untuk serial Korea, serta **NontonAnimeID**, **Otakudesu**, **Oploverz**, **AnimeIndo**, **AnimeSail**, dan **Layaranime** untuk serial anime.
+- **Nuvio Desktop dan Nuvio TV Full di Android TV** bisa memakai [`manifest.json`](https://raw.githubusercontent.com/destradess/indofetch/refs/heads/main/manifest.json) dengan **LK21**, **Dutamovie**, dan **Pencurimovie** untuk film, **Dubbindo** untuk film dubbing Indonesia, **Oppadrama** untuk serial Korea, serta **NontonAnimeID**, **Otakudesu**, **Oploverz**, **AnimeIndo**, **AnimeSail**, dan **Layaranime** untuk serial anime, serta **Anichin** untuk donghua.
 - **Nuvio TV Full di Android TV** juga bisa memakai [`repo.json`](https://raw.githubusercontent.com/destradess/indofetch/refs/heads/main/repo.json) dengan 21 provider CloudStream untuk film, serial, drama Asia, dan anime.
 
 Di **Settings → Plugins**, aktifkan **Group plugin providers by repository** agar **IndoFetch** menjadi nama grup di pemilihan stream.
