@@ -1,0 +1,455 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/TeKuma25/IndoStream/385f4037fd34c18e831cfaf16a0cac26c5315515/Anichin.cs3",
+    "status": 1,
+    "version": 4,
+    "name": "Anichin",
+    "internalName": "Anichin",
+    "authors": [
+      "TeKuma25"
+    ],
+    "description": "Nonton streaming anime terlengkap dan terupdate dari Anichin.",
+    "fileSize": 29419,
+    "repositoryUrl": "https://github.com/TeKuma25/IndoStream",
+    "language": "id",
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie",
+      "OVA"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=anichin.moe&sz=%size%",
+    "apiVersion": 1,
+    "fileHash": "sha256-f885adb8e70fdcef1682aff82823eb521e24380b0b34a085a1663e49dfefa777"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/destradess/indofetch/main/compat/Dubbindo-v6.cs3",
+    "status": 1,
+    "version": 6,
+    "name": "Dubbindo",
+    "internalName": "Dubbindo",
+    "authors": [
+      "TeKuma25"
+    ],
+    "description": "Nonton kartun, anime, dan serial dubbing Indonesia dari Dubbindo.",
+    "fileSize": 225715,
+    "repositoryUrl": "https://github.com/TeKuma25/IndoStream",
+    "language": "id",
+    "tvTypes": [
+      "TvSeries",
+      "Movie",
+      "Cartoon",
+      "Anime"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=www.dubbindo.site&sz=%size%",
+    "apiVersion": 1,
+    "fileHash": "sha256-d96d3a4c1c867c913a7d1eecc582dc8ecb198bbc310978aedb0fe7f895fd881e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/destradess/indofetch/main/compat/Dutamovie-v9.cs3",
+    "status": 1,
+    "version": 9,
+    "name": "Dutamovie",
+    "internalName": "Dutamovie",
+    "authors": [
+      "TeKuma25"
+    ],
+    "description": "Nonton streaming film bioskop sub Indo terlengkap dari DutaMovie.",
+    "fileSize": 245016,
+    "repositoryUrl": "https://github.com/TeKuma25/IndoStream",
+    "language": "id",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries",
+      "Movie"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=aubergedelavenir.com&sz=256",
+    "apiVersion": 1,
+    "fileHash": "sha256-e7a3d68b544e62b9ab9d8dceea7e4afdf71cca195789ca342c2ae43e279d421a"
+  },
+  {
+    "iconUrl": "https://i.ibb.co.com/Jjzsxm9F/cropped-lk21-1.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX-V2",
+    "fileSize": 24041,
+    "status": 1,
+    "language": "id",
+    "authors": [
+      "Asm0d3usX"
+    ],
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "version": 1,
+    "internalName": "Filmkita",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX-V2/c73809693bc8406a6f8cffd98039e8278e92a95a/Filmkita.cs3",
+    "name": "Filmkita",
+    "fileHash": "sha256-57b2305880863023b8f08f26aae5fc3ad2477afa7df7b2116845c53266e573f2"
+  },
+  {
+    "iconUrl": "https://i.ibb.co.com/Cs2n4h1v/filmlokal.jpg",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX-V2",
+    "fileSize": 20434,
+    "status": 1,
+    "language": "id",
+    "authors": [
+      "Asm0d3usX"
+    ],
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "version": 1,
+    "internalName": "Filmlokal",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX-V2/c73809693bc8406a6f8cffd98039e8278e92a95a/Filmlokal.cs3",
+    "name": "Filmlokal",
+    "fileHash": "sha256-69cfadc0e6be1123354bb08ee42d5151d785597c3bb1f33b86163af4f1d33777"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/destradess/indofetch/main/compat/Idlix-v36.cs3",
+    "status": 1,
+    "version": 36,
+    "name": "Idlix",
+    "internalName": "Idlix",
+    "authors": [
+      "TeKuma25"
+    ],
+    "description": "Nonton streaming film dan serial TV subtitle Indonesia terlengkap dari Idlix.",
+    "fileSize": 288261,
+    "repositoryUrl": "https://github.com/TeKuma25/IndoStream",
+    "language": "id",
+    "tvTypes": [
+      "TvSeries",
+      "Movie",
+      "Anime",
+      "AsianDrama"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=z2.idlixku.com&sz=%size%",
+    "apiVersion": 1,
+    "fileHash": "sha256-fd172310bbaa98667720ed7fe266efcf3bd6b52d43ae9ad847893132cad3a043"
+  },
+  {
+    "iconUrl": "https://i.ibb.co.com/KjQdk4YC/kawanfilm.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX-V2",
+    "fileSize": 27616,
+    "status": 1,
+    "language": "id",
+    "authors": [
+      "Asm0d3usX"
+    ],
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "version": 1,
+    "internalName": "Kawanfilm",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX-V2/c73809693bc8406a6f8cffd98039e8278e92a95a/Kawanfilm.cs3",
+    "name": "Kawanfilm",
+    "fileHash": "sha256-271cf55372a3cb5ec1dc83ccc7718e45280b145e10cfe7c3bc6ec766d62201d4"
+  },
+  {
+    "iconUrl": "https://i.ibb.co.com/QF8w02RR/klikxxi.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX-V2",
+    "fileSize": 20005,
+    "status": 1,
+    "language": "id",
+    "authors": [
+      "Asm0d3usX"
+    ],
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "version": 1,
+    "internalName": "KlikXXi",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX-V2/c73809693bc8406a6f8cffd98039e8278e92a95a/KlikXXi.cs3",
+    "name": "KlikXXi",
+    "fileHash": "sha256-527c442274ffa62662eb1b3b7b2611c3be856852cd68083ad5726932d771c0bf"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/destradess/indofetch/main/compat/Kuramanime-v44.cs3",
+    "status": 1,
+    "version": 44,
+    "name": "Kuramanime",
+    "internalName": "Kuramanime",
+    "authors": [
+      "TeKuma25"
+    ],
+    "description": "Nonton streaming dan download anime subtitle Indonesia kualitas tinggi dari Kuramanime.",
+    "fileSize": 253203,
+    "repositoryUrl": "https://github.com/TeKuma25/IndoStream",
+    "language": "id",
+    "tvTypes": [
+      "AnimeMovie",
+      "Anime",
+      "OVA"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=kuramanime.ing&sz=%size%",
+    "apiVersion": 1,
+    "fileHash": "sha256-edacbae1c092f1049e911551f3c526fb7088473d6af13df3eaa237ccb54f5e71"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/destradess/indofetch/main/compat/LayarKaca-v33.cs3",
+    "status": 1,
+    "version": 33,
+    "name": "LayarKaca",
+    "internalName": "LayarKaca",
+    "authors": [
+      "TeKuma25"
+    ],
+    "description": "Nonton streaming film bioskop sub Indo terlengkap dan terupdate dari LayarKaca21 (LK21).",
+    "fileSize": 245507,
+    "repositoryUrl": "https://github.com/TeKuma25/IndoStream",
+    "language": "id",
+    "tvTypes": [
+      "Movie"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=lk21official.cc&sz=%size%",
+    "apiVersion": 1,
+    "fileHash": "sha256-cb22e0b813dc8f294dbe31c695d27f7722cd0a4726fcafd636a09c5d262fee1d"
+  },
+  {
+    "iconUrl": "https://i.ibb.co.com/6RGz8QkY/layarwarna.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX-V2",
+    "fileSize": 24214,
+    "status": 1,
+    "language": "id",
+    "authors": [
+      "Asm0d3usX"
+    ],
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "version": 1,
+    "internalName": "LayarWarna",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX-V2/c73809693bc8406a6f8cffd98039e8278e92a95a/LayarWarna.cs3",
+    "name": "LayarWarna",
+    "fileHash": "sha256-cfaa4f793682813187ffc3a0ae284b20233dc2612d2cfef250bbccf72ec3e616"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/destradess/indofetch/main/compat/Ngefilm-v5.cs3",
+    "status": 1,
+    "version": 5,
+    "name": "Ngefilm",
+    "internalName": "Ngefilm",
+    "authors": [
+      "TeKuma25"
+    ],
+    "description": "Nonton streaming film dan drama series subtitle Indonesia dari Ngefilm.",
+    "fileSize": 239616,
+    "repositoryUrl": "https://github.com/TeKuma25/IndoStream",
+    "language": "id",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries",
+      "Movie"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=new39.ngefilm.site&sz=%size%",
+    "apiVersion": 1,
+    "fileHash": "sha256-017143058860dfac72445e46649d342cf4994b4424fd2d1b32da6bcab44c3654"
+  },
+  {
+    "iconUrl": "https://i.ibb.co.com/Z1YVFHNS/nomat.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX-V2",
+    "fileSize": 19451,
+    "status": 1,
+    "language": "id",
+    "authors": [
+      "Asm0d3usX"
+    ],
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "version": 1,
+    "internalName": "Nomat",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX-V2/c73809693bc8406a6f8cffd98039e8278e92a95a/Nomat.cs3",
+    "name": "Nomat",
+    "fileHash": "sha256-acea324975bbd3715af5ad0a15623cfe671c62f547e8448e98abb2636ac5f640"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/destradess/indofetch/main/compat/NontonAnimeID-v29.cs3",
+    "status": 1,
+    "version": 29,
+    "name": "NontonAnimeID",
+    "internalName": "NontonAnimeID",
+    "authors": [
+      "TeKuma25"
+    ],
+    "description": "Nonton anime subtitle Indonesia terlengkap dan terupdate gratis dari NontonAnimeID.",
+    "fileSize": 243277,
+    "repositoryUrl": "https://github.com/TeKuma25/IndoStream",
+    "language": "id",
+    "tvTypes": [
+      "AnimeMovie",
+      "Anime",
+      "OVA"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=nontonanime.id&sz=%size%",
+    "apiVersion": 1,
+    "fileHash": "sha256-a7c82f883e7e5832a4bb474ad9749c35bae2c287a040587283a487d5253caf43"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/destradess/indofetch/main/compat/NontonDrama-v5.cs3",
+    "status": 1,
+    "version": 5,
+    "name": "NontonDrama",
+    "internalName": "NontonDrama",
+    "authors": [
+      "TeKuma25"
+    ],
+    "description": "Nonton streaming drama Asia, drama Korea, dan serial TV sub Indo dari NontonDrama (Dramamu).",
+    "fileSize": 237389,
+    "repositoryUrl": "https://github.com/TeKuma25/IndoStream",
+    "language": "id",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=dramamu.lk21.de&sz=%size%",
+    "apiVersion": 1,
+    "fileHash": "sha256-0fe585cb0a7a805986a355921530d7aac0840645d2902c2cc14a2decf7032406"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/destradess/indofetch/main/compat/Otakudesu-v22.cs3",
+    "status": 1,
+    "version": 22,
+    "name": "Otakudesu",
+    "internalName": "Otakudesu",
+    "authors": [
+      "TeKuma25"
+    ],
+    "description": "Nonton streaming anime subtitle Indonesia terlengkap dan terupdate dari Otakudesu.",
+    "fileSize": 240360,
+    "repositoryUrl": "https://github.com/TeKuma25/IndoStream",
+    "language": "id",
+    "tvTypes": [
+      "AnimeMovie",
+      "Anime",
+      "OVA"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=otakudesu.blog&sz=%size%",
+    "apiVersion": 1,
+    "fileHash": "sha256-a390b76e92d952b7d84ec2c8f5228bc1fb135c2a00706b150c9544e7e8aa0c1e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/destradess/indofetch/main/compat/Pencurimovie-v9.cs3",
+    "status": 1,
+    "version": 9,
+    "name": "Pencurimovie",
+    "internalName": "Pencurimovie",
+    "authors": [
+      "TeKuma25"
+    ],
+    "description": "Nonton streaming film dan serial subtitle Indonesia & Melayu dari Pencurimovie.",
+    "fileSize": 226794,
+    "repositoryUrl": "https://github.com/TeKuma25/IndoStream",
+    "language": "id",
+    "tvTypes": [
+      "Movie",
+      "TvSeries",
+      "Anime",
+      "Cartoon"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=ww44.pencurimovie.baby&sz=%size%",
+    "apiVersion": 1,
+    "fileHash": "sha256-eb73dbe3cab1bc3f7cebd7a59260c297b6fabda82af1c388b7294890f93f6689"
+  },
+  {
+    "iconUrl": "https://i.ibb.co.com/qFdDYpcD/pusatmovie.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX-V2",
+    "fileSize": 23941,
+    "status": 1,
+    "language": "id",
+    "authors": [
+      "Asm0d3usX"
+    ],
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "version": 1,
+    "internalName": "Pusatmovie",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX-V2/c73809693bc8406a6f8cffd98039e8278e92a95a/Pusatmovie.cs3",
+    "name": "Pusatmovie",
+    "fileHash": "sha256-d1ac2b4bad4cfec0fd5fc357cf30b5be259c7ba56031428c13a07cd9024c9826"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/destradess/indofetch/main/compat/Samehadaku-v30.cs3",
+    "status": 1,
+    "version": 30,
+    "name": "Samehadaku",
+    "internalName": "Samehadaku",
+    "authors": [
+      "TeKuma25"
+    ],
+    "description": "Nonton streaming dan download anime subtitle Indonesia terbaru dari Samehadaku.",
+    "fileSize": 230751,
+    "repositoryUrl": "https://github.com/TeKuma25/IndoStream",
+    "language": "id",
+    "tvTypes": [
+      "AnimeMovie",
+      "OVA",
+      "Anime"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=v2.samehadaku.how&sz=%size%",
+    "apiVersion": 1,
+    "fileHash": "sha256-1ccdcd46816eb5eb58d4f6d9fa9e094277aa7714c337ee1128eb6cdda861580c"
+  },
+  {
+    "iconUrl": "https://i.ibb.co.com/HptN2Q7m/savefilm.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX-V2",
+    "fileSize": 21933,
+    "status": 1,
+    "language": "id",
+    "authors": [
+      "Asm0d3usX"
+    ],
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "version": 1,
+    "internalName": "Savefilm",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX-V2/c73809693bc8406a6f8cffd98039e8278e92a95a/Savefilm.cs3",
+    "name": "Savefilm",
+    "fileHash": "sha256-5bb52630a1c5fc326ace7665c43a645cd2555dc7b925f32cdb740908334e4329"
+  },
+  {
+    "iconUrl": "https://i.ibb.co.com/zHLLPyVd/wgfilm21.webp",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Asm0d3usX/CloudX-V2",
+    "fileSize": 24012,
+    "status": 1,
+    "language": "id",
+    "authors": [
+      "Asm0d3usX"
+    ],
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "version": 1,
+    "internalName": "WGFilm21",
+    "description": "📺 Streaming Movie and TV Series",
+    "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX-V2/c73809693bc8406a6f8cffd98039e8278e92a95a/WGFilm21.cs3",
+    "name": "WGFilm21",
+    "fileHash": "sha256-35832a5e612b5931564a24fbbe042b125fc92ba495c4734d157f54375eead0d8"
+  }
+]

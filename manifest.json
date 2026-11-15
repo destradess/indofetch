@@ -1,0 +1,8 @@
+{
+  "name": "IndoFetch",
+  "description": "Pilihan sumber film, serial, dan anime dari IndoStream dan CloudX-V2.",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "plugins.json"
+  ]
+}
