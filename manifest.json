@@ -1,6 +1,20 @@
 {
   "name": "IndoFetch",
   "description": "Pilihan sumber film, serial, dan anime dari IndoStream dan CloudX-V2.",
+  "version": "1.0.0",
+  "scrapers": [
+    {
+      "id": "layarkaca",
+      "name": "LayarKaca",
+      "description": "Sumber film LayarKaca",
+      "version": "1.0.0",
+      "filename": "providers/layarkaca.js",
+      "supportedTypes": ["movie"],
+      "enabled": true,
+      "contentLanguage": ["id"],
+      "formats": ["m3u8"]
+    }
+  ],
   "manifestVersion": 1,
   "pluginLists": [
     "plugins.json"
