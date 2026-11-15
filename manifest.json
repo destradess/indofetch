@@ -1,7 +1,7 @@
 {
   "name": "IndoFetch",
   "description": "Pilihan sumber film, serial, dan anime dari IndoStream dan CloudX-V2.",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "scrapers": [
     {
       "id": "layarkaca",
@@ -97,6 +97,17 @@
       "description": "Sumber serial anime AnimeIndo",
       "version": "1.0.0",
       "filename": "providers/animeindo.js",
+      "supportedTypes": ["series", "anime"],
+      "enabled": true,
+      "contentLanguage": ["id"],
+      "formats": ["mp4"]
+    },
+    {
+      "id": "animesail",
+      "name": "AnimeSail",
+      "description": "Sumber serial anime AnimeSail",
+      "version": "1.0.0",
+      "filename": "providers/animesail.js",
       "supportedTypes": ["series", "anime"],
       "enabled": true,
       "contentLanguage": ["id"],
