@@ -48,7 +48,7 @@ function getStreams(tmdbId, mediaType) {
                 .then(findPlaylist).then(result => {
                     const url = result?.fileUrl;
                     if (typeof url !== 'string' || !/^https:\/\/[^\s]+\.m3u8(?:[?#][^\s]*)?$/i.test(url)) return [];
-                    return [{ name: 'LayarKaca', title: `${title} (${year})`, url, provider: 'LayarKaca',
+                    return [{ name: 'LK21', title: `${title} (${year})`, url, provider: 'LK21',
                         headers: { Referer: `${playback}/` } }];
                 });
         }).catch(() => []);
