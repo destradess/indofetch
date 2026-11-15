@@ -1,7 +1,7 @@
 {
   "name": "IndoFetch",
   "description": "Pilihan sumber film, serial, dan anime dari IndoStream dan CloudX-V2.",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "scrapers": [
     {
       "id": "layarkaca",
@@ -112,6 +112,17 @@
       "enabled": true,
       "contentLanguage": ["id"],
       "formats": ["mp4"]
+    },
+    {
+      "id": "layaranime",
+      "name": "Layaranime",
+      "description": "Sumber serial anime Layaranime",
+      "version": "1.0.0",
+      "filename": "providers/layaranime.js",
+      "supportedTypes": ["series", "anime"],
+      "enabled": true,
+      "contentLanguage": ["id"],
+      "formats": ["m3u8"]
     }
   ],
   "manifestVersion": 1,
