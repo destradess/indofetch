@@ -1,13 +1,13 @@
 {
   "name": "IndoFetch",
   "description": "Pilihan sumber film, serial, dan anime dari IndoStream dan CloudX-V2.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "scrapers": [
     {
       "id": "layarkaca",
       "name": "LK21",
       "description": "Sumber film LK21",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "filename": "providers/layarkaca.js",
       "supportedTypes": ["movie"],
       "enabled": true,
@@ -18,7 +18,7 @@
       "id": "dutamovie",
       "name": "Dutamovie",
       "description": "Sumber film Dutamovie",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "filename": "providers/dutamovie.js",
       "supportedTypes": ["movie"],
       "enabled": true,

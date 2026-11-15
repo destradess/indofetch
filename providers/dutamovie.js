@@ -79,6 +79,45 @@ function unpackPlayer(html) {
     }).replace(/\\(['"/])/g, '$1');
 }
 
+function playlistMetadata(playlist) {
+    const variants = [];
+    const audioTracks = [];
+
+    for (const line of playlist.split(/\r?\n/)) {
+        const tag = /^#EXT-X-(STREAM-INF|MEDIA):(.*)$/.exec(line);
+        if (!tag) continue;
+        const attributes = Object.fromEntries(Array.from(
+            tag[2].matchAll(/(?:^|,)([\w-]+)=(?:"([^"]*)"|([^,]*))/g),
+            ([, key, quoted, unquoted]) => [key, quoted ?? unquoted],
+        ));
+        if (tag[1] === 'MEDIA') {
+            if (attributes.TYPE === 'AUDIO') audioTracks.push(attributes);
+            continue;
+        }
+        const height = Number(/^\d+x(\d+)$/.exec(attributes.RESOLUTION)?.[1]) || 0;
+        variants.push({ height, attributes });
+    }
+
+    variants.sort((a, b) => b.height - a.height || Number(b.attributes.BANDWIDTH) - Number(a.attributes.BANDWIDTH));
+    const best = variants[0];
+    if (!best) return {};
+    const attributes = best.attributes;
+    const codecs = (attributes.CODECS ?? '').toLowerCase().split(',').map(codec => codec.trim());
+    const video = codecs.find(codec => /^(?:avc[13]|hvc1|hev1|av01|vp09)\./.test(codec))?.split('.')[0];
+    const videoLabel = { avc1: 'H.264', avc3: 'H.264', hvc1: 'HEVC', hev1: 'HEVC', av01: 'AV1', vp09: 'VP9' }[video];
+    const range = { SDR: 'SDR', PQ: 'HDR (PQ)', HLG: 'HDR (HLG)' }[attributes['VIDEO-RANGE']];
+    const tracks = audioTracks.filter(track => track['GROUP-ID'] === attributes.AUDIO);
+    const languages = [...new Set(tracks.map(track => track.LANGUAGE).filter(code => /^[a-z]{2,3}(?:-[a-z0-9]{2,8})*$/i.test(code)))];
+    const channels = tracks.length && tracks.every(track => track.CHANNELS === '2') ? ' 2.0' : '';
+    const audio = codecs.some(codec => /^mp4a\.40\./.test(codec)) ? 'AAC' + channels : null;
+
+    return {
+        quality: best.height ? best.height + 'p' : undefined,
+        language: languages.length ? languages.join(' / ') : undefined,
+        details: [videoLabel, range, audio].filter(Boolean),
+    };
+}
+
 async function getPlaylists(embed, referer) {
     const page = await readPage(embed, referer);
     if (!page || !playerHosts.has(httpsUrl(page.url)?.hostname)) return [];
@@ -92,7 +131,9 @@ async function getPlaylists(embed, referer) {
 
     const checks = await Promise.all([...candidates].map(async url => {
         const playlist = await readPage(url, page.url);
-        if (playlist && /^\s*#EXTM3U\b/.test(playlist.html)) return { url, headers: { Referer: page.url } };
+        if (playlist && /^\s*#EXTM3U\b/.test(playlist.html)) {
+            return { url, headers: { Referer: page.url }, ...playlistMetadata(playlist.html) };
+        }
         return null;
     }));
     return checks.filter(Boolean);
@@ -128,9 +169,10 @@ async function getStreams(tmdbId, mediaType) {
         const alternates = playerTabs(page).map(async url => streamsFromPage(await readPage(url, page.url)));
         const groups = await Promise.all([streamsFromPage(page), ...alternates]);
         const streams = new Map();
-        for (const { url, headers } of groups.flat()) {
+        for (const { url, headers, quality, language, details = [] } of groups.flat()) {
             if (!streams.has(url)) {
-                streams.set(url, { name: 'Dutamovie', title: title + ' (' + year + ')', url, type: 'hls', headers });
+                const displayTitle = [title + ' (' + year + ')', ...details].join(' • ');
+                streams.set(url, { name: 'Dutamovie', title: displayTitle, url, type: 'hls', headers, quality, language });
             }
         }
         const results = [...streams.values()];
