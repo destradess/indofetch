@@ -1,7 +1,7 @@
 {
   "name": "IndoFetch",
   "description": "Pilihan sumber film, serial, dan anime dari IndoStream dan CloudX-V2.",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "scrapers": [
     {
       "id": "layarkaca",
@@ -76,6 +76,17 @@
       "version": "1.0.0",
       "filename": "providers/dubbindo.js",
       "supportedTypes": ["movie"],
+      "enabled": true,
+      "contentLanguage": ["id"],
+      "formats": ["mp4"]
+    },
+    {
+      "id": "oploverz",
+      "name": "Oploverz",
+      "description": "Sumber serial anime Oploverz",
+      "version": "1.0.0",
+      "filename": "providers/oploverz.js",
+      "supportedTypes": ["series", "anime"],
       "enabled": true,
       "contentLanguage": ["id"],
       "formats": ["mp4"]
