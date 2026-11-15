@@ -54,7 +54,6 @@ function playerTabs(page) {
         if (tab?.origin !== base.origin || tab.pathname !== base.pathname) continue;
         const number = /(?:^\?|&)player=([1-9]\d?)(?:&|$)/.exec(tab.search)?.[1];
         if (number) players.add(base.origin + base.pathname + '?player=' + number);
-        if (players.size === 8) break;
     }
     return [...players];
 }
@@ -80,9 +79,9 @@ function unpackPlayer(html) {
     }).replace(/\\(['"/])/g, '$1');
 }
 
-async function getPlaylist(embed, referer) {
+async function getPlaylists(embed, referer) {
     const page = await readPage(embed, referer);
-    if (!page || !playerHosts.has(httpsUrl(page.url)?.hostname)) return null;
+    if (!page || !playerHosts.has(httpsUrl(page.url)?.hostname)) return [];
 
     const candidates = new Set();
     const content = page.html + '\n' + unpackPlayer(page.html);
@@ -91,12 +90,12 @@ async function getPlaylist(embed, referer) {
         if (url && mediaHost.test(url.hostname)) candidates.add(url.href);
     }
 
-    const checks = await Promise.all([...candidates].slice(0, 4).map(async url => {
+    const checks = await Promise.all([...candidates].map(async url => {
         const playlist = await readPage(url, page.url);
         if (playlist && /^\s*#EXTM3U\b/.test(playlist.html)) return { url, headers: { Referer: page.url } };
         return null;
     }));
-    return checks.find(Boolean) ?? null;
+    return checks.filter(Boolean);
 }
 
 async function streamsFromPage(page) {
@@ -106,7 +105,7 @@ async function streamsFromPage(page) {
         const url = httpsUrl(value, page.url);
         if (url && playerHosts.has(url.hostname)) embeds.add(url.href);
     }
-    return (await Promise.all([...embeds].slice(0, 4).map(url => getPlaylist(url, page.url)))).filter(Boolean);
+    return (await Promise.all([...embeds].map(url => getPlaylists(url, page.url)))).flat();
 }
 
 async function getStreams(tmdbId, mediaType) {
@@ -134,7 +133,11 @@ async function getStreams(tmdbId, mediaType) {
                 streams.set(url, { name: 'Dutamovie', title: title + ' (' + year + ')', url, type: 'hls', headers });
             }
         }
-        return [...streams.values()];
+        const results = [...streams.values()];
+        return results.length < 2 ? results : results.map((stream, index) => ({
+            ...stream,
+            name: 'Dutamovie · Link ' + (index + 1),
+        }));
     } catch {
         return [];
     }
